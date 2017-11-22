@@ -1,0 +1,321 @@
+body {
+  background-color: rgb(244, 244, 248);
+  background-image: url(img/fon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /*font-family: "Dorsa" , serif;
+  font-family:  "Pathway+Gothic+One", serif;*/
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /*justify-content: space-between;*/
+  /*align-content:	center;*/
+  align-items: center;
+  margin: 100px auto 150px auto;
+  /*width: 12%;
+  height: 190px;*/
+  width: 1000px;
+  height: 100px;
+  padding: 0px 30px;
+  /*position: relative;*/
+  text-decoration: none;
+  /*display: inline-block;*/
+  /*font-family: "Pathway+Gothic+One", serif;
+  font-size: 20px;*/
+}
+
+.menu__item {
+  /*position: relative;
+  display: inline-block;*/
+  /*width: 100px;*/
+  height: 100px;
+  display: flex;
+  /* flex-direction: row;*/
+  align-items: center;
+  justify-content: center;
+  /*text-align: center;*/
+  text-decoration: none;
+  color: #fff;
+  /*color: hsl(156, 33%, 97%);*/
+  /* Цвет текста */
+  /*margin: 10px 10px 10px 10px;*/
+  text-transform: uppercase;
+  font-family: "Pathway+Gothic+One", serif;
+  font-size: 20px;
+}
+
+.sub-sign {
+  position: relative;
+  display: inline-block;
+  /*width: 50px;*/
+  margin: auto;
+}
+
+.menu__item>a:hover {
+  background: rgb(138, 86, 221);
+  /*color: var(--item-bg);*/
+}
+
+.submenu__item>a:hover {
+  background: rgb(126, 103, 230);
+  /*color: var(--item-bg);*/
+}
+
+.menu__item_1>a:hover {
+  background: rgb(138, 86, 221);
+  /*color: var(--item-bg);*/
+}
+
+.menu__item_2>.sub-sign:hover {
+  background: rgb(138, 86, 221);
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80px;
+  height: 120px;
+  margin: auto;
+  padding: 0px;
+  list-style: none;
+  position: absolute;
+  left: -5px;
+  top: 90px;
+  background: #f6f5f8;
+  display: none;
+  font-family: "Pathway+Gothic+One", serif;
+  font-size: 16px;
+}
+
+.submenu__item {
+  width: 80px;
+  /*height: 25px;*/
+  padding: 13px 0 9px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu__item_2,
+.menu__item_1 {
+  margin: 0;
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  /* flex-direction: row;*/
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__item_1 {
+  /* display: flex;*/
+  /* flex-direction: row;*/
+  /*align-items:	center;*/
+  /*justify-content:	center;*/
+  width: 120px;
+  height: 120px;
+  background: rgb(241, 233, 233);
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  font-family: "Dorsa", serif;
+  font-size: 60px;
+}
+
+.menu__item_2 {
+  display: flex;
+  position: relative;
+  /* flex-direction: row;*/
+  align-items: center;
+  justify-content: center;
+  /*width: 100px;*/
+  height: 100px;
+  font-family: "Pathway+Gothic+One", serif;
+  font-size: 20px;
+}
+
+
+/* делаем .submenu видимым */
+
+.menu__item_2:hover>.submenu {
+  display: block;
+  /*position: absolute;*/
+}
+
+.sub-sign::before {
+  content: '\25B4';
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  color: #fff;
+}
+
+a {
+  /*position: relative;*/
+  color: #fff;
+  /* Цвет текста */
+  text-decoration: none;
+  /*padding: 40px 40px;
+    margin: 40px 40px;*/
+}
+
+span {
+  color: hsl(0, 0%, 3%);
+}
+
+
+/*окончание навигации*/
+
+.wrapper {
+  width: 1000px;
+  /*height: 1100px*/
+  ;
+  padding: 100px 20px 150px 20px;
+  margin: 100px auto 0 auto;
+  background: hsl(156, 33%, 97%);
+}
+
+.txt {
+  text-transform: uppercase;
+  margin: 0px 0px 30px 35px;
+}
+
+.section {
+  display: flex;
+  /*justify-content: space-between;*/
+  justify-content: center;
+  flex-wrap: wrap;
+  /*position: relative;*/
+  width: 1000px;
+  /*height: 700px;*/
+  margin: auto;
+  padding: 0 0px 0 0px;
+  /*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL9BmOBZ2NfEF37YnZU4A-WNqP8LHkC56ee3aI6n8Hdv6kZE53fw);*/
+  /*background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: local;
+  /*background-size: cover;*/
+  /*background-size: 100% 100%;*/
+}
+
+.foto {
+  /*width: 300px;
+  height: 180px;*/
+  margin: 15px 10px;
+  /*margin-right:0px;*/
+  /*flex-grow: 2;*/
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0px 20px 0px 20px;
+  background: hsl(226, 40%, 31%);
+}
+
+h3 {
+  margin: 50px 0px 20px 0px;
+}
+
+.fixed {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 250px;
+  right: 120px;
+  background: hsl(231, 67%, 77%);
+  color: white;
+  text-align: center;
+  /*position: absolute;
+      /*top: -250px;*/
+  /*bottom: 20px;*/
+  /*left: 100px;*/
+}
+
+.fixed a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  /*display: flex;*/
+  /*justify-content: center; /*Центрирование по горизонтали*/
+  /*align-items: center;*/
+  /*Центрирование по вертикали */
+  line-height: 45px;
+}
+
+.sprait {
+  display: flex;
+  justify-content: center;
+  /* position: relative;*/
+  /* overflow: hidden;*/
+  /*overflow: visible;*/
+  width: 1040px;
+  height: 40px;
+  padding: 0 0;
+  margin: 30px auto;
+  /*background: hsl(224, 44%, 82%);*/
+  /*text-align: center;*/
+}
+
+.sprait li {
+  float: left;
+  list-style: none;
+}
+
+.sprait a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url(img/spr.png) 0 0 no-repeat;
+  transition: 0.2s;
+}
+
+.sprait .twit {
+  background-position: 0px 0px;
+}
+
+.sprait .face {
+  background-position: -52px 0px;
+}
+
+.sprait .googl {
+  background-position: -106px 0px;
+}
+
+.sprait .in {
+  background-position: -158px 0px;
+}
+
+.sprait .twit:hover {
+  background-position: 0px -49px;
+}
+
+.sprait .face:hover {
+  background-position: -52px -49px;
+}
+
+.sprait .googl:hover {
+  background-position: -106px -49px;
+}
+
+.sprait .in:hover {
+  background-position: -158px -49px;
+}
+
+.footer2 {
+  width: 1040px;
+  height: 15px;
+  margin: 0 auto;
+  /*padding: 0 280px;*/
+  text-align: center;
+  /*background: hsl(224, 44%, 82%);*/
+  /*color: hsl(223, 26%, 42%);*/
+}

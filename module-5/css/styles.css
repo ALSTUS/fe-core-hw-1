@@ -10,7 +10,8 @@ body {
 .wrapper {
   width: 1000px;
   height: 100px;
-  margin: 0px 0px 0px 120px;
+  /*margin: 0px 0px 0px 120px;*/
+  margin: auto;
 }
 
 .menu {
@@ -172,6 +173,7 @@ span {
   padding: 50px 50px 50px 50px;
   margin: 100px 0px 100px 70px;
   background: hsl(156, 33%, 97%);
+  /*margin: auto;*/
 }
 
 .section_1 {
